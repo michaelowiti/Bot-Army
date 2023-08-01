@@ -11,7 +11,7 @@ function MyBotArmy({army,onRetire}){
     <h5 className="card-text">{bot.health}</h5>
     <h5 className="card-text">{bot.damage}</h5>
     <p className="card-text">{bot.catchphrase}</p>
-    <button type="button" class="btn btn-danger">Delete</button>
+    
     
   </div>
 </div>
