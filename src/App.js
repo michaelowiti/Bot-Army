@@ -37,7 +37,7 @@ function App() {
   let remainingBots;
   function handleDelete(bot) {
     console.log(bot);
-    fetch(`http://localhost:3000/bots/${bot}`, {
+    fetch(`https://armyserver.onrender.com/bots/${bot}`, {
       method: "DELETE",
     })
     remainingBots = bots.filter(bot => bot.id !== bot)
@@ -48,7 +48,7 @@ function App() {
     console.log(bots);
   }
   useEffect(() => {
-    fetch(" http://localhost:3000/bots")
+    fetch(" https://armyserver.onrender.com/bots")
       .then(resp => resp.json())
       .then(bots => setBots(bots));
   }, []);
